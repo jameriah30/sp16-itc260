@@ -10,7 +10,7 @@ class Welcome extends CI_Controller {
 		$data['title'] = "My Unique Title Tag!";
         $data['pade_id'] = "My Clever Page ID!";
 
-        $data['guts'] = '<p>I am the cream filling on the inside.</p>'
+        $data['guts'] = '<p>I am the cream filling on the inside.</p>';
         //data is passed as second parameter in view creation
 		$this->load->view('welcome_message',$data);
 	}
