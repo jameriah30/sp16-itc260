@@ -1,0 +1,26 @@
+<?php
+
+//News_model.php
+class News_model extends CI_Model {
+
+
+
+    //constructor will load the database for every method
+    public function __construct()
+    {
+        $this->load->database();
+    }
+
+
+    public function get_news($slug = FALSE)
+    {
+        if ($slug === FALSE)
+        {
+            $query = $this->db->get('sp16_news');
+            return $query->result_array();
+        }
+
+        $query = $this->db->get_where('sp16_news', array('slug' => $slug));
+        return $query->row_array();
+    }
+}
