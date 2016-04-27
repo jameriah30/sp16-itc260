@@ -1,7 +1,7 @@
 <?php
 //views/news.index.php
 
-$this->load->view($this->config->item('theme', 'header'));
+$this->load->view($this->config->item('theme') . 'header');
 
 ?>
 
@@ -21,6 +21,6 @@ $this->load->view($this->config->item('theme', 'header'));
 <?php endforeach; ?>
 
 <?php
-$this->load->view($this->config->item('theme', 'footer'));
+$this->load->view($this->config->item('theme') . 'footer');
 
 ?>

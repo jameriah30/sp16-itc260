@@ -18,9 +18,9 @@ class News extends CI_Controller {
         $data['page_id'] = "News";
 
 
-        $this->load->view('templates/header',$data);
+        //$this->load->view('templates/header',$data);
         $this->load->view('news/index',$data);
-        $this->load->view('templates/footer',$data);
+        //s$this->load->view('templates/footer',$data);
 
     }
 
